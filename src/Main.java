@@ -57,7 +57,7 @@ public class Main {
             RDFA.add(arr);
 
         }
-        return new LinkedList[]{RDFA};
+        return RDFA.toArray();
     }
 
     /**
@@ -85,6 +85,8 @@ public class Main {
                 if (large > largest1) {
                     largest1 = large;
                     largest0 = largest1;
+                } else if (large>largest0){
+                    largest0= large;
                 }
             }
             return largest0 + largest1;
