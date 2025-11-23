@@ -83,8 +83,8 @@ public class Main {
 
             for (int large : array) {
                 if (large > largest1) {
-                    largest1 = large;
                     largest0 = largest1;
+                    largest1 = large;
                 } else if (large>largest0){
                     largest0= large;
                 }
